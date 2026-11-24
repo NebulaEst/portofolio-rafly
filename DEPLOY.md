@@ -1,4 +1,4 @@
-# Deploy ke Vercel (gratis, paket Hobby)
+# Deploy ke GitHub Pages (gratis)
 
 Situs ini statis (HTML, CSS, JS), jadi tidak butuh build.
 
@@ -10,26 +10,26 @@ Buka `index.html`, cari dan ganti 3 placeholder di bagian Contact:
 
 Deskripsi 4 proyek ditulis dari nama repo. Sesuaikan jika isinya berbeda.
 
-## Cara 1: lewat GitHub (disarankan)
-1. Buat repo baru di GitHub, misalnya `NebulaEst/portfolio`, lalu unggah `index.html`, `style.css`, dan `script.js`.
-2. Buka vercel.com, klik **Sign Up**, pilih **Continue with GitHub**.
-3. Klik **Add New → Project**, pilih repo `portfolio`, lalu **Import**.
-4. **Framework Preset**: pilih **Other**. Kosongkan Build Command dan Output Directory.
-5. Klik **Deploy**. Dalam sekitar satu menit situs aktif di `https://portfolio-xxxx.vercel.app`.
-6. Setiap `git push` ke branch utama akan otomatis memperbarui situs.
+## Pilih alamat situs
+- **Repo `NebulaEst.github.io`** → alamat `https://nebulaest.github.io` (paling rapi, hanya boleh satu per akun).
+- **Repo `portfolio`** (nama bebas) → alamat `https://nebulaest.github.io/portfolio`.
 
-## Cara 2: lewat terminal
-```bash
-cd portfolio
-npx vercel        # login pertama kali, jawab pertanyaan dengan Enter
-npx vercel --prod # rilis ke produksi
-```
+Keduanya berfungsi dengan file ini tanpa perubahan. Repo `NebulaEst/NebulaEst` dipakai untuk profil dan tidak dipakai di sini.
 
-## Mengganti nama subdomain
-Project → **Settings → Domains** → tambahkan misalnya `nebulaest.vercel.app` (jika masih tersedia).
-Domain sendiri (.com, dll.) berbayar di registrar; sambungkan lewat menu yang sama.
+## Langkah
+1. Buka github.com/new, isi nama repo (`NebulaEst.github.io` atau `portfolio`), pilih **Public**, lalu **Create repository**.
+2. Klik **uploading an existing file**, seret `index.html`, `style.css`, dan `script.js` (file harus berada di akar repo, bukan di dalam folder), lalu **Commit changes**.
+3. Buka **Settings → Pages**.
+4. Di **Build and deployment**, pilih **Source: Deploy from a branch**, **Branch: main**, folder **/ (root)**, lalu **Save**.
+5. Tunggu 1 sampai 3 menit. Alamat situs muncul di bagian atas halaman Pages. Segarkan halaman jika belum tampil.
+6. Untuk memperbarui, edit atau unggah ulang file di repo, lalu commit. Situs ikut berubah otomatis.
+
+## Jika situs tidak muncul
+- Pastikan `index.html` ada di akar repo dan repo berstatus Public.
+- Cek tab **Actions**: ada proses "pages build and deployment" yang harus berstatus hijau.
+- Tekan Ctrl+F5 untuk membersihkan cache browser.
 
 ## Catatan
-- Batas Hobby (per dokumentasi Vercel): 100 GB transfer data per bulan, 100 deploy per hari. Lebih dari cukup untuk portofolio.
-- Paket Hobby ditujukan untuk penggunaan pribadi. Cek Terms of Service Vercel jika situs akan dipakai untuk bisnis.
-- Cadangan gratis jika diperlukan: Cloudflare Pages atau GitHub Pages (unggah folder yang sama, tanpa build).
+- Batas GitHub Pages (per dokumentasi GitHub): ukuran situs maks 1 GB, bandwidth 100 GB per bulan (soft limit), 10 build per jam.
+- GitHub Pages tidak untuk toko online atau bisnis komersial. Portofolio pribadi aman.
+- Domain sendiri (.com, dll.) berbayar di registrar; sambungkan lewat **Settings → Pages → Custom domain**.
