@@ -66,7 +66,7 @@
     var rvIo = new IntersectionObserver(function (es) {
       es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); rvIo.unobserve(en.target); } });
     }, { threshold: 0.12 });
-    $$('.card,.tracks li,.rec,.quote,.paint,.sec').forEach(function (el) { el.classList.add('rv'); rvIo.observe(el); });
+    $$('.card,.cert,.tracks li,.rec,.quote,.paint,.sec').forEach(function (el) { el.classList.add('rv'); rvIo.observe(el); });
   }
 
   /* ---------- record player ---------- */
