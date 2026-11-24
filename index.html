@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rafly Al Razaq · NebulaEst</title>
+<meta name="description" content="Portfolio of Rafly Al Razaq: web developer, front-end designer and project explorer from Bukittinggi, Indonesia.">
+<meta name="theme-color" content="#08040f">
+<meta property="og:title" content="Rafly Al Razaq · NebulaEst">
+<meta property="og:description" content="Web developer, front-end designer and project explorer.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23150a2e'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23a855f7' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23c4b5fd'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#intro" data-en="Skip to content" data-id="Lompat ke konten">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="#intro" aria-label="NebulaEst home"><span class="dot"></span>NebulaEst</a>
+  <nav class="links" aria-label="Main">
+    <a href="#intro" data-en="Intro" data-id="Intro">Intro</a>
+    <a href="#focus" data-en="Focus" data-id="Fokus">Focus</a>
+    <a href="#path" data-en="Path" data-id="Jalur">Path</a>
+    <a href="#projects" data-en="Projects" data-id="Proyek">Projects</a>
+    <a href="#skills" data-en="Skills" data-id="Skill">Skills</a>
+    <a href="#motto" data-en="Motto" data-id="Motto">Motto</a>
+    <a href="#contact" data-en="Contact" data-id="Kontak">Contact</a>
+  </nav>
+  <div class="tools">
+    <button class="np-btn" id="npBtn" aria-expanded="false" aria-controls="npPanel"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span data-en="Now spinning" data-id="Sedang diputar">Now spinning</span></button>
+    <div class="lang" role="group" aria-label="Language">
+      <button id="langId" data-lang="id">ID</button><button id="langEn" data-lang="en" aria-pressed="true">EN</button>
+    </div>
+  </div>
+</header>
+
+<aside class="np-panel" id="npPanel" hidden>
+  <p class="np-title" data-en="Tracklist" data-id="Daftar track">Tracklist</p>
+  <ol id="npList">
+    <li><a href="#intro"><b>01</b><span data-en="Intro" data-id="Intro">Intro</span></a></li>
+    <li><a href="#focus"><b>02</b><span data-en="Focus" data-id="Fokus">Focus</span></a></li>
+    <li><a href="#path"><b>03</b><span data-en="Learning path" data-id="Jalur belajar">Learning path</span></a></li>
+    <li><a href="#projects"><b>04</b><span data-en="Projects" data-id="Proyek">Projects</span></a></li>
+    <li><a href="#skills"><b>05</b><span data-en="Skills" data-id="Skill">Skills</span></a></li>
+    <li><a href="#offcourt"><b>06</b><span data-en="Off the clock" data-id="Di luar kode">Off the clock</span></a></li>
+    <li><a href="#motto"><b>07</b><span data-en="Motto" data-id="Motto">Motto</span></a></li>
+    <li><a href="#tag"><b>08</b><span data-en="Leave a tag" data-id="Tinggalkan jejak">Leave a tag</span></a></li>
+    <li><a href="#contact"><b>09</b><span data-en="Contact" data-id="Kontak">Contact</span></a></li>
+  </ol>
+</aside>
+
+<main>
+<!-- 01 INTRO -->
+<section id="intro" class="hero" data-track="01">
+  <div class="hero-text">
+    <p class="kicker mono"><span data-en="Hi, I'm" data-id="Halo, saya">Hi, I'm</span></p>
+    <h1>Rafly <em>Al Razaq</em></h1>
+    <p class="role" data-en="Web Developer · Front-End Designer · Project Explorer" data-id="Web Developer · Front-End Designer · Penjelajah Proyek">Web Developer · Front-End Designer · Project Explorer</p>
+    <p class="lead" data-en="I build interfaces that feel alive and I keep digging into how real systems work. Right now I'm learning microservices, security and mobile development from Bukittinggi, West Sumatra." data-id="Saya membuat antarmuka yang terasa hidup dan terus menggali cara kerja sistem sungguhan. Saat ini saya belajar microservice, keamanan, dan pemrograman mobile dari Bukittinggi, Sumatra Barat.">I build interfaces that feel alive and I keep digging into how real systems work. Right now I'm learning microservices, security and mobile development from Bukittinggi, West Sumatra.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects" data-en="See my projects" data-id="Lihat proyek saya">See my projects</a>
+      <a class="btn" href="#contact" data-en="Get in touch" data-id="Hubungi saya">Get in touch</a>
+    </div>
+    <ul class="stats">
+      <li><b>4</b><span data-en="featured repos" data-id="repo unggulan">featured repos</span></li>
+      <li><b>5</b><span data-en="languages" data-id="bahasa pemrograman">languages</span></li>
+      <li><b>3</b><span data-en="focus areas now" data-id="fokus belajar">focus areas now</span></li>
+    </ul>
+  </div>
+  <div class="deck" aria-hidden="true">
+    <div class="platter">
+      <div class="vinyl" id="vinyl"><div class="label"><span>NEBULA</span><span>EST</span></div></div>
+      <div class="arm" id="arm"></div>
+    </div>
+    <button class="play" id="playBtn" aria-pressed="true" aria-label="Pause or play record animation"><span data-en="Pause" data-id="Jeda">Pause</span></button>
+  </div>
+</section>
+
+<!-- 02 FOCUS -->
+<section id="focus" data-track="02">
+  <h2 class="sec"><i class="mono">02</i><span data-en="What I do" data-id="Yang saya kerjakan">What I do</span></h2>
+  <div class="cards">
+    <article class="card"><h3 data-en="Web development" data-id="Pengembangan web">Web development</h3><p data-en="Full pages and back ends with Laravel, PHP and JavaScript, tested with Insomnia and versioned with Git." data-id="Halaman dan back end lengkap dengan Laravel, PHP, dan JavaScript, diuji dengan Insomnia dan dikelola dengan Git.">Full pages and back ends with Laravel, PHP and JavaScript, tested with Insomnia and versioned with Git.</p></article>
+    <article class="card"><h3 data-en="Front-end design" data-id="Desain front-end">Front-end design</h3><p data-en="From Figma layouts to responsive React interfaces with clear structure and detail." data-id="Dari layout Figma sampai antarmuka React yang responsif dengan struktur dan detail yang jelas.">From Figma layouts to responsive React interfaces with clear structure and detail.</p></article>
+    <article class="card"><h3 data-en="Project exploring" data-id="Menjelajah proyek">Project exploring</h3><p data-en="I enjoy trying new stacks and building small experiments to see how they behave in practice." data-id="Saya suka mencoba stack baru dan membuat eksperimen kecil untuk melihat cara kerjanya.">I enjoy trying new stacks and building small experiments to see how they behave in practice.</p></article>
+    <article class="card"><h3 data-en="Containers & services" data-id="Container & layanan">Containers &amp; services</h3><p data-en="Docker and a microservice mindset: splitting systems into small parts that talk to each other." data-id="Docker dan pola pikir microservice: memecah sistem jadi bagian kecil yang saling berkomunikasi.">Docker and a microservice mindset: splitting systems into small parts that talk to each other.</p></article>
+  </div>
+</section>
+
+<!-- 03 PATH -->
+<section id="path" data-track="03">
+  <h2 class="sec"><i class="mono">03</i><span data-en="Learning path" data-id="Jalur belajar">Learning path</span></h2>
+  <ol class="tracks">
+    <li><b class="mono">A1</b><div><h3 data-en="Web foundations" data-id="Dasar web">Web foundations</h3><p data-en="HTML, JavaScript, PHP and Laravel as the base for everything else." data-id="HTML, JavaScript, PHP, dan Laravel sebagai fondasi untuk semuanya.">HTML, JavaScript, PHP and Laravel as the base for everything else.</p></div><span class="tag" data-en="Basics" data-id="Dasar">Basics</span></li>
+    <li><b class="mono">A2</b><div><h3 data-en="Front-end & design" data-id="Front-end & desain">Front-end &amp; design</h3><p data-en="React and Figma: turning ideas into interfaces people enjoy using." data-id="React dan Figma: mengubah ide menjadi antarmuka yang nyaman dipakai.">React and Figma: turning ideas into interfaces people enjoy using.</p></div><span class="tag" data-en="Core" data-id="Inti">Core</span></li>
+    <li><b class="mono">B1</b><div><h3>Microservices</h3><p data-en="Splitting an application into independent services with Docker." data-id="Memecah aplikasi menjadi layanan independen dengan Docker.">Splitting an application into independent services with Docker.</p></div><span class="tag live" data-en="Learning" data-id="Belajar">Learning</span></li>
+    <li><b class="mono">B2</b><div><h3 data-en="Security systems" data-id="Sistem keamanan">Security systems</h3><p data-en="Understanding how applications get attacked so I can build them safer." data-id="Memahami bagaimana aplikasi diserang agar bisa membangunnya lebih aman.">Understanding how applications get attacked so I can build them safer.</p></div><span class="tag live" data-en="Learning" data-id="Belajar">Learning</span></li>
+    <li><b class="mono">B3</b><div><h3 data-en="Mobile with Flutter" data-id="Mobile dengan Flutter">Mobile with Flutter</h3><p data-en="Dart and Flutter exercises to bring my work onto phones." data-id="Latihan Dart dan Flutter untuk membawa karya saya ke ponsel.">Dart and Flutter exercises to bring my work onto phones.</p></div><span class="tag live" data-en="Learning" data-id="Belajar">Learning</span></li>
+  </ol>
+</section>
+
+<!-- 04 PROJECTS -->
+<section id="projects" data-track="04">
+  <h2 class="sec"><i class="mono">04</i><span data-en="Projects" data-id="Proyek">Projects</span></h2>
+  <div class="records">
+    <a class="rec" href="https://github.com/NebulaEst/Micro-Service" target="_blank" rel="noopener">
+      <div class="disc"></div><div class="rec-body"><small class="mono">REPO · 01</small><h3>Micro-Service</h3><p data-en="Hands-on practice with a microservice architecture." data-id="Latihan langsung dengan arsitektur microservice.">Hands-on practice with a microservice architecture.</p><span class="go" data-en="Open on GitHub ↗" data-id="Buka di GitHub ↗">Open on GitHub ↗</span></div></a>
+    <a class="rec" href="https://github.com/NebulaEst/omdb_rafly2B" target="_blank" rel="noopener">
+      <div class="disc"></div><div class="rec-body"><small class="mono">REPO · 02</small><h3>omdb_rafly2B</h3><p data-en="A movie app built around the OMDb data source (class 2B)." data-id="Aplikasi film berbasis sumber data OMDb (kelas 2B).">A movie app built around the OMDb data source (class 2B).</p><span class="go" data-en="Open on GitHub ↗" data-id="Buka di GitHub ↗">Open on GitHub ↗</span></div></a>
+    <a class="rec" href="https://github.com/NebulaEst/Flutter-Exercise" target="_blank" rel="noopener">
+      <div class="disc"></div><div class="rec-body"><small class="mono">REPO · 03</small><h3>Flutter-Exercise</h3><p data-en="Mobile exercises with Dart and Flutter." data-id="Latihan mobile dengan Dart dan Flutter.">Mobile exercises with Dart and Flutter.</p><span class="go" data-en="Open on GitHub ↗" data-id="Buka di GitHub ↗">Open on GitHub ↗</span></div></a>
+    <a class="rec" href="https://github.com/NebulaEst/PBL" target="_blank" rel="noopener">
+      <div class="disc"></div><div class="rec-body"><small class="mono">REPO · 04</small><h3>PBL</h3><p data-en="A project-based learning build, from idea to working result." data-id="Proyek project-based learning, dari ide sampai hasil yang berjalan.">A project-based learning build, from idea to working result.</p><span class="go" data-en="Open on GitHub ↗" data-id="Buka di GitHub ↗">Open on GitHub ↗</span></div></a>
+  </div>
+  <p class="more"><a href="https://github.com/NebulaEst" target="_blank" rel="noopener" data-en="See everything on GitHub ↗" data-id="Lihat semuanya di GitHub ↗">See everything on GitHub ↗</a></p>
+</section>
+
+<!-- 05 SKILLS -->
+<section id="skills" data-track="05">
+  <h2 class="sec"><i class="mono">05</i><span data-en="Skills" data-id="Skill">Skills</span></h2>
+  <p class="hint" data-en="Drag the stickers around. They're yours to rearrange." data-id="Seret stikernya. Silakan atur ulang sesukamu.">Drag the stickers around. They're yours to rearrange.</p>
+  <div class="board" id="board" aria-label="Skill stickers"></div>
+  <button class="btn" id="resetStickers" data-en="Stick them back" data-id="Tempel ulang">Stick them back</button>
+</section>
+
+<!-- 06 OFF THE CLOCK -->
+<section id="offcourt" data-track="06">
+  <h2 class="sec"><i class="mono">06</i><span data-en="Off the clock" data-id="Di luar kode">Off the clock</span></h2>
+  <div class="cards four">
+    <article class="card"><h3>⚽ Futsal</h3><p data-en="Fast passes, quick decisions." data-id="Umpan cepat, keputusan cepat.">Fast passes, quick decisions.</p></article>
+    <article class="card"><h3>🏀 Basketball</h3><p data-en="Practice until the shot feels automatic." data-id="Latihan sampai tembakan terasa otomatis.">Practice until the shot feels automatic.</p></article>
+    <article class="card"><h3>🏐 Volleyball</h3><p data-en="Team rhythm over solo effort." data-id="Ritme tim di atas usaha sendiri.">Team rhythm over solo effort.</p></article>
+    <article class="card"><h3>🎮 Gaming</h3><p data-en="Where I get curious about how things are built." data-id="Tempat saya penasaran bagaimana sesuatu dibuat.">Where I get curious about how things are built.</p></article>
+  </div>
+  <p class="more" data-en="Fun fact: I'm endlessly curious about how the working world operates." data-id="Fun fact: saya selalu penasaran dengan cara dunia kerja berjalan.">Fun fact: I'm endlessly curious about how the working world operates.</p>
+</section>
+
+<!-- 07 MOTTO -->
+<section id="motto" data-track="07">
+  <h2 class="sec"><i class="mono">07</i><span data-en="Motto" data-id="Motto">Motto</span></h2>
+  <figure class="quote" aria-live="polite">
+    <blockquote id="qText"></blockquote>
+    <figcaption id="qWho" class="mono"></figcaption>
+  </figure>
+  <div class="q-ctrl">
+    <button class="btn" id="qPrev" aria-label="Previous quote">←</button>
+    <span class="mono" id="qCount"></span>
+    <button class="btn" id="qNext" aria-label="Next quote">→</button>
+  </div>
+</section>
+
+<!-- 08 TAG -->
+<section id="tag" data-track="08">
+  <h2 class="sec"><i class="mono">08</i><span data-en="Leave a tag" data-id="Tinggalkan jejak">Leave a tag</span></h2>
+  <p class="hint" data-en="Draw anything. It stays on your device only; nothing is uploaded." data-id="Gambar apa saja. Hanya ada di perangkatmu, tidak ada yang diunggah.">Draw anything. It stays on your device only; nothing is uploaded.</p>
+  <div class="paint">
+    <div class="paint-tools">
+      <div class="swatches" id="swatches" role="group" aria-label="Color"></div>
+      <label><span data-en="Size" data-id="Ukuran">Size</span><input type="range" id="size" min="2" max="40" value="10"></label>
+      <label><span data-en="Soft spray" data-id="Semprot halus">Soft spray</span><input type="checkbox" id="spray" checked></label>
+      <button class="btn" id="clearC" data-en="Clear" data-id="Hapus">Clear</button>
+      <button class="btn" id="saveC" data-en="Save PNG" data-id="Simpan PNG">Save PNG</button>
+    </div>
+    <canvas id="canvas" width="1000" height="420" aria-label="Drawing canvas"></canvas>
+  </div>
+</section>
+
+<!-- 09 CONTACT -->
+<section id="contact" class="outro" data-track="09">
+  <h2 data-en="Shall we build something together?" data-id="Mau membuat sesuatu bersama?">Shall we build something together?</h2>
+  <p class="lead" data-en="Open to collaboration, internships and new project ideas." data-id="Terbuka untuk kolaborasi, magang, dan ide proyek baru.">Open to collaboration, internships and new project ideas.</p>
+  <div class="cta center">
+    <a class="btn primary" href="mailto:GANTI_EMAIL_ANDA@gmail.com">Email</a>
+    <a class="btn" href="https://www.linkedin.com/in/GANTI_USERNAME_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://instagram.com/GANTI_USERNAME_IG" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn" href="https://github.com/NebulaEst" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p class="mono">© <span id="yr"></span> Rafly Al Razaq · NebulaEst · Bukittinggi, ID</p>
+  <a href="#intro" class="mono" data-en="Back to top ↑" data-id="Kembali ke atas ↑">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
